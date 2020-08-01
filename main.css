@@ -1,0 +1,56 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background: #34495E;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    color: whitesmoke;
+}
+
+#description {
+    font-size: 18px;
+}
+
+main {
+    border: 5px solid #ABB2B9;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 600px;
+    background-color: #ABB2B9;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.form-group, .form-control {
+    font-size: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bot-marg {
+    margin-bottom: 0;
+}
+
+#comments {
+    margin-top: 20px;
+}
+
+.form-radio, .form-box {
+    display: block;
+}
+
+#submit-btn {
+    width: 100%;
+    height: 2em;
+    font-size: 18px;
+    background-color: #34495E;
+    padding: 5px;
+    color: white;
+}
