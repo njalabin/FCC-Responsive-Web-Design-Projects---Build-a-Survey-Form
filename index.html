@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a Survey Form</title>
+    <title>Baby Essentials</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">description of survey form</p>
-    <form action="" id="survey-form">
-        <label for="" id="name-label">Name</label>
-        <input type="text" id="name" required placeholder="Your Name">
-        <label for="" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <label for="" id="number-label">Number</label>
-        <input type="number" name="" id="number" min="6" max="12" placeholder="Your Number">
-        <label for="brands">Choose One</label>
-        <select name="brands" id="dropdown">
-            <option value="UppaBaby">UppaBaby</option>
-            <option value="Chicco">Chicco</option>
-            <option value="Nuna">Nuna</option>
-        </select>
-        input
-        <input type="radio" name="stroller" id="" value="Uppababy">
-        <input type="radio" name="stroller" id="" value="Chicco">
-        <input type="radio" name="stroller" id="" value="Nuna">
-        <input type="checkbox" name="car-seat" id="" value="UppaBaby">
-        <input type="checkbox" name="car-seat" id="" value="Chicco">
-        <input type="checkbox" name="car-seat" id="" value="Nuna">
-        <textarea name="" id="" cols="30" rows="10">Please subscribe</textarea>
-        <input type="submit" id="submit" value="">Submit
+    <div>
+        <header>
+            <h1 id="title">Baby Essentials Survey Form</h1>
+            <p id="description">A guide to your purchase decisions</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="" id="name-label">Name
+                        <input type="text" id="name" class="form-control" required placeholder="Your Name"></label>
+                </div>
+                <div class="form-group">
+                    <label for="" id="email-label">Email
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="" id="number-label">Phone Number
+                        <input type="tel" name="" id="number" class="form-control" min="6" max="12"
+                            placeholder="Your Number"></label>
+                </div>
+                <div class="form-group">
+                    <p class="bot-marg">Please select a brand you would like to receive as gift</p>
+                    <label for="brands">
+                        <select name="brands" id="dropdown" class="form-control">
+                            <option value="">Choose a Brand</option>
+                            <option value="UppaBaby">UppaBaby</option>
+                            <option value="Chicco">Chicco</option>
+                            <option value="Nuna">Nuna</option>
+                            <option value="Nuna">Baby Jogger</option>
+                            <option value="Nuna">Bumbleride</option>
+                            <option value="Nuna">Silver Cross</option>
+                            <option value="Nuna">Maxi-Cosi</option>
+                        </select></label>
+                </div>
+                <div class="form-group">
+                    <p class="bot-marg">Please select the stroller brand you are currently using</p>
+                    <label for="UppaBaby" class="form-radio">
+                        <input type="radio" name="stroller" id="UppaBaby" value="UppaBaby">UppaBaby</label>
+                    <label for="Chicco" class="form-radio">
+                        <input type="radio" name="stroller" id="Chicco" value="Chicco">Chicco</label>
+                    <label for="Nuna" class="form-radio">
+                        <input type="radio" name="stroller" id="Nuna" value="Nuna">Nuna</label>
+                    <label for="Baby Jogger" class="form-radio">
+                        <input type="radio" name="stroller" id="Baby Jogger" value="Baby Jogger">Baby Jogger</label>
+                </div>
+                <div class="form-group">
+                    <p class="bot-marg">Please select the Brands you currently own</p>
+                    <label for="UppaBaby" class="form-box">
+                        <input type="checkbox" name="car-seat" id="UppaBaby" value="UppaBaby">UppaBaby</label>
+                    <label for="Chicco" class="form-box">
+                        <input type="checkbox" name="car-seat" id="Chicco" value="Chicco">Chicco</label>
+                    <label for="Nuna" class="form-box">
+                        <input type="checkbox" name="car-seat" id="Nuna" value="Nuna">Nuna</label>
+                    <label for="Baby Jogger" class="form-box">
+                        <input type="checkbox" name="car-seat" id="Baby Jogger" value="Baby Jogger">Baby Jogger</label>
+                </div>
+                <div class="form-group" id="comments">
+                    <textarea name="" id="" class="form-control" cols=""
+                        rows="10">Please leave your comments and suggestions here</textarea>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+        </main>
+    </div>
     </form>
 </body>
+
 </html>
